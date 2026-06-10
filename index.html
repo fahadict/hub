@@ -4,245 +4,184 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ICT Support Officer | Hargeisa Somaliland | NGO & Embassy IT Specialist</title>
+<title>ICT Support Officer | Hargeisa Somaliland | NGO & UN IT Specialist</title>
 
-<meta name="description" content="Professional ICT Support Officer based in Hargeisa, Somaliland. Skilled in IT Support, Networking, Troubleshooting, Systems Administration, Web Development, and ICT Training for NGOs, Embassies, and Schools.">
+<meta name="description" content="ICT Support Officer based in Hargeisa, Somaliland. Skilled in IT Helpdesk, Networking, Servers, Cybersecurity, CCTV, Microsoft 365, ICT Training, and Systems Administration. Available for NGO, UN, Embassy ICT jobs.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
---primary:#0056b3;
---secondary:#0077cc;
+--primary:#003f88;
 --accent:#00a8ff;
---light:#f4f8fc;
 --dark:#0f172a;
+--light:#f4f7ff;
 --white:#ffffff;
 --shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
 
-body{background:#f8fbff;color:#333;line-height:1.7;}
+body{background:var(--light);color:#333;line-height:1.6;}
 
 /* HEADER */
 header{
-background:linear-gradient(135deg,var(--primary),var(--secondary));
+background:linear-gradient(135deg,var(--primary),var(--accent));
 color:white;
-padding:18px 6%;
+padding:15px 6%;
 position:sticky;
 top:0;
 z-index:999;
 box-shadow:var(--shadow);
 }
 
-nav{
+.navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-flex-wrap:wrap;
 }
 
-.logo{font-size:1.3rem;font-weight:800;}
+.logo{font-weight:700;font-size:1.1rem;}
 
-nav ul{
+.menu{
 display:flex;
 gap:18px;
 list-style:none;
 }
 
-nav ul li a{
+.menu a{
 color:white;
 text-decoration:none;
-font-weight:500;
 font-size:14px;
+font-weight:500;
+}
+
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+.menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:0;
+background:var(--primary);
+width:220px;
+padding:15px;
+}
+.menu.show{display:flex;}
+.menu-toggle{display:block;}
 }
 
 /* HERO */
 .hero{
-padding:90px 6%;
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-justify-content:space-between;
-background:linear-gradient(rgba(0,86,179,.9),rgba(0,119,204,.9)),
-url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
-background-size:cover;
-background-position:center;
+padding:85px 6%;
+text-align:center;
+background:linear-gradient(rgba(0,63,136,0.9),rgba(0,168,255,0.9));
 color:white;
 }
 
-.hero-text{flex:1;min-width:280px;}
+.hero h1{font-size:2.3rem;margin-bottom:10px;}
 
-.hero-text h1{font-size:2.8rem;margin-bottom:15px;}
+.hero p{max-width:750px;margin:auto;}
 
-.hero-text p{font-size:1.05rem;max-width:650px;margin-bottom:20px;}
-
-.hero-img{flex:1;text-align:center;}
-
-.hero-img img{
-width:300px;
-height:300px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid white;
-box-shadow:var(--shadow);
+.badge{
+display:inline-block;
+margin-top:10px;
+background:#00ffcc;
+color:#000;
+padding:6px 14px;
+border-radius:20px;
+font-weight:600;
+font-size:13px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 26px;
+margin-top:12px;
+padding:12px 22px;
 background:white;
 color:var(--primary);
+border-radius:30px;
 font-weight:700;
 text-decoration:none;
-border-radius:35px;
-margin:5px;
-transition:.3s;
 }
-
-.btn:hover{transform:translateY(-4px);}
 
 /* SECTIONS */
-section{padding:75px 6%;}
+section{padding:65px 6%;}
 
-.section-title{text-align:center;margin-bottom:40px;}
+.title{text-align:center;margin-bottom:30px;}
 
-.section-title h2{
-font-size:2.2rem;
-color:var(--primary);
-}
+.title h2{color:var(--primary);font-size:1.9rem;}
 
-/* ABOUT */
-.about{
+/* GRID */
+.grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:18px;
 }
 
-.about-card{
+.card{
 background:white;
-padding:25px;
-border-radius:15px;
+padding:18px;
+border-radius:12px;
 box-shadow:var(--shadow);
 }
 
 /* SKILLS */
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:20px;
-}
-
-.skill-card{
+.skill{
 background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:var(--shadow);
-transition:.3s;
-}
-
-.skill-card:hover{transform:translateY(-6px);}
-
-.skill-card h3{color:var(--primary);margin-bottom:10px;}
-
-/* PROJECTS */
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:22px;
-}
-
-.project{
-background:white;
-border-radius:15px;
-overflow:hidden;
+padding:15px;
+border-radius:10px;
 box-shadow:var(--shadow);
 }
 
-.project img{width:100%;height:220px;object-fit:cover;}
-
-.project-content{padding:18px;}
-
-.project-content h3{color:var(--primary);}
-
-/* TIMELINE */
-.timeline{max-width:900px;margin:auto;}
-
-.timeline-item{
+/* SERVICES */
+.services li{
 background:white;
-padding:22px;
-margin-bottom:18px;
-border-left:5px solid var(--primary);
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+list-style:none;
 box-shadow:var(--shadow);
 }
 
-/* CERTIFICATIONS */
-.certifications{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:20px;
-}
-
-.cert-card{
-background:white;
-padding:22px;
-border-radius:15px;
-text-align:center;
-box-shadow:var(--shadow);
+/* CERTIFICATES */
+.cert img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
 }
 
 /* STATS */
 .stats{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:18px;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
 text-align:center;
 }
 
 .stat{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:var(--shadow);
-}
-
-.stat h3{font-size:2rem;color:var(--primary);}
-
-/* TESTIMONIALS */
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.testimonial{
-background:white;
 padding:22px;
-border-radius:15px;
+border-radius:10px;
 box-shadow:var(--shadow);
 }
+
+.stat h3{color:var(--primary);font-size:1.8rem;}
 
 /* CONTACT */
-.contact{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:25px;
-}
-
-.contact-form{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:var(--shadow);
-}
-
 input,textarea{
 width:100%;
 padding:12px;
-margin-bottom:12px;
+margin-bottom:10px;
 border:1px solid #ccc;
-border-radius:10px;
+border-radius:8px;
 }
 
 button{
@@ -251,40 +190,30 @@ padding:12px;
 background:var(--primary);
 color:white;
 border:none;
-border-radius:10px;
+border-radius:8px;
 font-weight:700;
-cursor:pointer;
 }
 
 /* FOOTER */
 footer{
-background:#0f172a;
+background:var(--dark);
 color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
+padding:25px;
 }
 
 /* WHATSAPP */
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:15px;
+right:15px;
 background:#25d366;
 color:white;
-padding:15px 18px;
+padding:15px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
 box-shadow:var(--shadow);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-.hero{flex-direction:column;text-align:center;}
-.hero h1{font-size:2rem;}
-.about,.contact{grid-template-columns:1fr;}
-nav ul{flex-direction:column;margin-top:10px;}
 }
 </style>
 </head>
@@ -292,157 +221,141 @@ nav ul{flex-direction:column;margin-top:10px;}
 <body>
 
 <header>
-<nav>
-<div class="logo">Jamal Fahadh Mohamed</div>
-<ul>
+<div class="navbar">
+<div class="logo">ICT Support Officer</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul class="menu" id="menu">
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#experience">Experience</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#certs">Certificates</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-</nav>
+</div>
 </header>
 
 <section class="hero">
-<div class="hero-text">
-<h1>ICT Support Officer</h1>
-<p>Results-driven ICT professional with 7+ years experience in IT Support, Networking, Systems Administration, Web Development, and ICT Training for NGOs, Embassies, and Schools in Somaliland.</p>
+<h1>ICT Support Officer | Hargeisa Somaliland</h1>
+<span class="badge">✔ Available Immediately for NGO / UN / Embassy ICT Jobs</span>
+<p>Experienced ICT professional specializing in IT Helpdesk, Networking, Systems Administration, Cybersecurity basics, CCTV systems, Microsoft 365, and ICT Training.</p>
 
 <a href="Jamal_Fahadh_CV.pdf" class="btn">Download CV</a>
 <a href="#contact" class="btn">Hire Me</a>
-</div>
-
-<div class="hero-img">
-<img src="jamal-profile.jpg" alt="Jamal Fahadh Mohamed">
-</div>
 </section>
 
 <section id="about">
-<div class="section-title"><h2>About Me</h2></div>
-<div class="about">
-<div class="about-card">
-<h3>Professional Profile</h3>
-<p>I am an ICT professional based in Hargeisa with strong experience in troubleshooting, networking, ICT infrastructure management, Microsoft Office 365, and system support in education and NGO environments.</p>
+<div class="title"><h2>Professional Profile</h2></div>
+<div class="grid">
+<div class="card">
+<h3>ICT Support Officer</h3>
+<p>Experienced in ICT infrastructure support, troubleshooting, and system administration in schools and organizations in Somaliland.</p>
 </div>
-
-<div class="about-card">
-<h3>Core Strengths</h3>
-<ul>
-<li>ICT Helpdesk Support</li>
-<li>Systems Administration</li>
-<li>Networking & Infrastructure</li>
-<li>Hardware & Software Repair</li>
-<li>Web Development & Database</li>
-<li>ICT Training & Capacity Building</li>
-</ul>
+<div class="card">
+<h3>Work Environment</h3>
+<p>NGO ICT Support • Embassy IT Helpdesk • School ICT Labs • Office Systems • Field ICT Support</p>
 </div>
-</div>
-</section>
-
-<section>
-<div class="section-title"><h2>Professional Highlights</h2></div>
-<div class="stats">
-<div class="stat"><h3>7+</h3><p>Years Experience</p></div>
-<div class="stat"><h3>100+</h3><p>Users Supported</p></div>
-<div class="stat"><h3>20+</h3><p>ICT Projects</p></div>
-<div class="stat"><h3>24/7</h3><p>Support Mindset</p></div>
 </div>
 </section>
 
 <section id="skills">
-<div class="section-title"><h2>ICT Skills</h2></div>
-<div class="skills">
-<div class="skill-card"><h3>ICT Support</h3><p>Helpdesk, troubleshooting, user support.</p></div>
-<div class="skill-card"><h3>Networking</h3><p>LAN/WAN setup, routers, WiFi configuration.</p></div>
-<div class="skill-card"><h3>Systems Admin</h3><p>Windows installation, system maintenance.</p></div>
-<div class="skill-card"><h3>Web & Database</h3><p>HTML, CSS, JavaScript, database basics.</p></div>
-<div class="skill-card"><h3>Office Tools</h3><p>Microsoft Office 365, Google Workspace.</p></div>
-<div class="skill-card"><h3>Hardware</h3><p>PC repair, printers, diagnostics.</p></div>
+<div class="title"><h2>ICT Capabilities</h2></div>
+<div class="grid">
+<div class="skill">Helpdesk & IT Support</div>
+<div class="skill">Networking (LAN/WAN)</div>
+<div class="skill">Server Basics (Windows/Linux)</div>
+<div class="skill">Cybersecurity Awareness</div>
+<div class="skill">CCTV Installation Support</div>
+<div class="skill">Microsoft 365 Admin</div>
+<div class="skill">Database Systems</div>
+<div class="skill">ICT Training</div>
 </div>
 </section>
 
-<section id="projects">
-<div class="section-title"><h2>Featured Projects</h2></div>
-<div class="projects">
+<section id="services">
+<div class="title"><h2>Services I Offer</h2></div>
+<ul>
+<li class="services">✔ ICT Helpdesk Support for NGOs & Schools</li>
+<li class="services">✔ Network Installation & Troubleshooting</li>
+<li class="services">✔ ICT Lab Setup & Maintenance</li>
+<li class="services">✔ CCTV Systems Support</li>
+<li class="services">✔ Staff ICT Training Programs</li>
+<li class="services">✔ Website Maintenance</li>
+</ul>
+</section>
 
-<div class="project">
-<img src="project1.jpg" alt="ICT Infrastructure">
-<div class="project-content">
-<h3>ICT Infrastructure Support</h3>
-<p>Managed ICT labs and systems maintenance.</p>
-</div>
+<section id="certs">
+<div class="title"><h2>Certificates</h2></div>
+<div class="grid">
+
+<div class="card cert">
+<img src="degree.jpg" alt="Degree Certificate">
+<p>Bachelor of BBIT</p>
 </div>
 
-<div class="project">
-<img src="project2.jpg" alt="Web Development">
-<div class="project-content">
-<h3>Website Development</h3>
-<p>Built and maintained responsive websites.</p>
-</div>
+<div class="card cert">
+<img src="web_cert.jpg" alt="Web Certificate">
+<p>Web Design Certification</p>
 </div>
 
-<div class="project">
-<img src="project3.jpg" alt="Training">
-<div class="project-content">
-<h3>ICT Training</h3>
-<p>Delivered digital skills training programs.</p>
-</div>
+<div class="card cert">
+<img src="kcse.jpg" alt="KCSE Certificate">
+<p>Secondary Education</p>
 </div>
 
 </div>
 </section>
 
-<section id="experience">
-<div class="section-title"><h2>Professional Experience</h2></div>
-<div class="timeline">
-
-<div class="timeline-item">
-<h3>ICT Support Officer | Elm High School</h3>
-<p>Managed ICT labs, troubleshooting, and technical support.</p>
-</div>
-
-<div class="timeline-item">
-<h3>ICT Trainer & Assistant</h3>
-<p>Delivered ICT training and system support.</p>
-</div>
-
+<section>
+<div class="title"><h2>Professional Impact</h2></div>
+<div class="stats">
+<div class="stat"><h3>7+</h3><p>Years Experience</p></div>
+<div class="stat"><h3>100+</h3><p>Users Supported</p></div>
+<div class="stat"><h3>20+</h3><p>Projects</p></div>
+<div class="stat"><h3>24/7</h3><p>Support Mindset</p></div>
 </div>
 </section>
 
 <section id="contact">
-<div class="section-title"><h2>Contact for ICT Jobs</h2></div>
+<div class="title"><h2>Contact for ICT Jobs</h2></div>
 
-<div class="contact">
-<div class="contact-form">
+<div class="grid">
+<div class="card">
 <form>
 <input type="text" placeholder="Your Name">
 <input type="email" placeholder="Your Email">
-<textarea rows="6" placeholder="Job Opportunity Message"></textarea>
+<textarea rows="5" placeholder="Job Opportunity Message"></textarea>
 <button type="submit">Send Message</button>
 </form>
 </div>
 
-<div class="about-card">
+<div class="card">
 <h3>Contact Info</h3>
 <p><b>Name:</b> Jamal Fahadh Mohamed</p>
 <p><b>Phone:</b> +252 636 710 907</p>
 <p><b>Email:</b> teacherfahadh@gmail.com</p>
 <p><b>Location:</b> Hargeisa, Somaliland</p>
-<p><b>Status:</b> Available for ICT Jobs</p>
+<p><b>Status:</b> Available Immediately</p>
+
 <br>
-<a href="Jamal_Fahadh_CV.pdf" class="btn">Download CV</a>
-<a href="https://wa.me/252636710907" class="btn">WhatsApp</a>
+<a class="btn" href="Jamal_Fahadh_CV.pdf">Download CV</a>
+<a class="btn" href="https://wa.me/252636710907">WhatsApp</a>
 </div>
 </div>
 </section>
 
 <footer>
-<p>ICT Support Officer Portfolio | Somaliland Job Ready</p>
-<p>© 2026 All Rights Reserved</p>
+<p>ICT Support Officer Portfolio | Built for Somaliland Job Market</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/252636710907">WhatsApp</a>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
