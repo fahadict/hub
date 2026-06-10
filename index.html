@@ -4,27 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ICT Support Officer | Hargeisa Somaliland | NGO & UN IT Specialist</title>
+<title>ICT Support Officer | Hargeisa Somaliland | NGO & Embassy IT Specialist</title>
 
-<meta name="description" content="ICT Support Officer based in Hargeisa, Somaliland. Skilled in IT Helpdesk, Networking, Servers, Cybersecurity, CCTV, Microsoft 365, ICT Training, and Systems Administration. Available for NGO, UN, Embassy ICT jobs.">
+<meta name="description" content="ICT Support Officer based in Hargeisa, Somaliland. Skilled in IT Support, Networking, Troubleshooting, Systems Administration, Web Development, ICT Training, and ICT Infrastructure support for NGOs, Embassies, and Schools.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
---primary:#003f88;
+--primary:#004a99;
 --accent:#00a8ff;
 --dark:#0f172a;
---light:#f4f7ff;
+--light:#f4f8fc;
 --white:#ffffff;
 --shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
 
-body{background:var(--light);color:#333;line-height:1.6;}
+body{background:var(--light);color:#333;line-height:1.7;}
 
-/* HEADER */
+/* HEADER MOBILE */
 header{
 background:linear-gradient(135deg,var(--primary),var(--accent));
 color:white;
@@ -32,16 +32,16 @@ padding:15px 6%;
 position:sticky;
 top:0;
 z-index:999;
-box-shadow:var(--shadow);
 }
 
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
+flex-wrap:wrap;
 }
 
-.logo{font-weight:700;font-size:1.1rem;}
+.logo{font-weight:700;font-size:1.2rem;}
 
 .menu{
 display:flex;
@@ -81,13 +81,24 @@ padding:15px;
 .hero{
 padding:85px 6%;
 text-align:center;
-background:linear-gradient(rgba(0,63,136,0.9),rgba(0,168,255,0.9));
+background:linear-gradient(rgba(0,74,153,0.9),rgba(0,168,255,0.9));
 color:white;
 }
 
-.hero h1{font-size:2.3rem;margin-bottom:10px;}
+.hero h1{font-size:2.4rem;margin-bottom:10px;}
 
 .hero p{max-width:750px;margin:auto;}
+
+/* PROFILE IMAGE */
+.profile-img{
+margin:15px auto;
+width:160px;
+height:160px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+box-shadow:var(--shadow);
+}
 
 .badge{
 display:inline-block;
@@ -100,6 +111,7 @@ font-weight:600;
 font-size:13px;
 }
 
+/* BUTTON */
 .btn{
 display:inline-block;
 margin-top:12px;
@@ -135,18 +147,8 @@ box-shadow:var(--shadow);
 /* SKILLS */
 .skill{
 background:white;
-padding:15px;
+padding:14px;
 border-radius:10px;
-box-shadow:var(--shadow);
-}
-
-/* SERVICES */
-.services li{
-background:white;
-padding:12px;
-margin:8px 0;
-border-radius:8px;
-list-style:none;
 box-shadow:var(--shadow);
 }
 
@@ -223,12 +225,12 @@ box-shadow:var(--shadow);
 <header>
 <div class="navbar">
 <div class="logo">ICT Support Officer</div>
-
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <ul class="menu" id="menu">
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
+<li><a href="#languages">Languages</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#certs">Certificates</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -236,59 +238,92 @@ box-shadow:var(--shadow);
 </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <h1>ICT Support Officer | Hargeisa Somaliland</h1>
+
+<img src="jamal-profile.jpg" class="profile-img" alt="Profile Image">
+
 <span class="badge">✔ Available Immediately for NGO / UN / Embassy ICT Jobs</span>
-<p>Experienced ICT professional specializing in IT Helpdesk, Networking, Systems Administration, Cybersecurity basics, CCTV systems, Microsoft 365, and ICT Training.</p>
+
+<p>
+Results-driven ICT Support Officer and IT Professional with over 7 years of experience supporting computer systems, users, digital learning environments, and ICT infrastructure.
+</p>
 
 <a href="Jamal_Fahadh_CV.pdf" class="btn">Download CV</a>
 <a href="#contact" class="btn">Hire Me</a>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-<div class="title"><h2>Professional Profile</h2></div>
+<div class="title"><h2>About Me</h2></div>
+
 <div class="grid">
 <div class="card">
-<h3>ICT Support Officer</h3>
-<p>Experienced in ICT infrastructure support, troubleshooting, and system administration in schools and organizations in Somaliland.</p>
+<h3>Professional Profile</h3>
+<p>I am an ICT professional based in Hargeisa with over 7 years of experience in hardware and software troubleshooting, technical support, networking, Microsoft Office 365, website administration, and database management. I am passionate about helping organizations maintain reliable systems and improve productivity.</p>
 </div>
+
 <div class="card">
-<h3>Work Environment</h3>
-<p>NGO ICT Support • Embassy IT Helpdesk • School ICT Labs • Office Systems • Field ICT Support</p>
+<h3>Core Strengths</h3>
+<ul>
+<li>ICT Support & Help Desk</li>
+<li>Systems Administration</li>
+<li>Hardware & Network Support</li>
+<li>Web Development & Database</li>
+<li>User Training & Capacity Building</li>
+<li>Technical Documentation</li>
+</ul>
 </div>
 </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-<div class="title"><h2>ICT Capabilities</h2></div>
+<div class="title"><h2>ICT Skills</h2></div>
+
 <div class="grid">
 <div class="skill">Helpdesk & IT Support</div>
 <div class="skill">Networking (LAN/WAN)</div>
-<div class="skill">Server Basics (Windows/Linux)</div>
-<div class="skill">Cybersecurity Awareness</div>
-<div class="skill">CCTV Installation Support</div>
-<div class="skill">Microsoft 365 Admin</div>
-<div class="skill">Database Systems</div>
+<div class="skill">System Administration</div>
+<div class="skill">Hardware Troubleshooting</div>
+<div class="skill">Web Development (HTML/CSS)</div>
+<div class="skill">Microsoft 365 Administration</div>
+<div class="skill">Database Management</div>
 <div class="skill">ICT Training</div>
 </div>
 </section>
 
-<section id="services">
-<div class="title"><h2>Services I Offer</h2></div>
-<ul>
-<li class="services">✔ ICT Helpdesk Support for NGOs & Schools</li>
-<li class="services">✔ Network Installation & Troubleshooting</li>
-<li class="services">✔ ICT Lab Setup & Maintenance</li>
-<li class="services">✔ CCTV Systems Support</li>
-<li class="services">✔ Staff ICT Training Programs</li>
-<li class="services">✔ Website Maintenance</li>
-</ul>
+<!-- LANGUAGES -->
+<section id="languages">
+<div class="title"><h2>Languages</h2></div>
+
+<div class="grid">
+<div class="card">Somali — Native</div>
+<div class="card">English — Fluent</div>
+<div class="card">Arabic — Basic Communication</div>
+</div>
 </section>
 
+<!-- SERVICES -->
+<section id="services">
+<div class="title"><h2>Services I Offer</h2></div>
+
+<div class="grid">
+<div class="card">ICT Helpdesk Support</div>
+<div class="card">Network Installation & Troubleshooting</div>
+<div class="card">ICT Lab Setup</div>
+<div class="card">CCTV Support</div>
+<div class="card">Staff ICT Training</div>
+<div class="card">Website Maintenance</div>
+</div>
+</section>
+
+<!-- CERTIFICATES -->
 <section id="certs">
 <div class="title"><h2>Certificates</h2></div>
-<div class="grid">
 
+<div class="grid">
 <div class="card cert">
 <img src="degree.jpg" alt="Degree Certificate">
 <p>Bachelor of BBIT</p>
@@ -303,12 +338,13 @@ box-shadow:var(--shadow);
 <img src="kcse.jpg" alt="KCSE Certificate">
 <p>Secondary Education</p>
 </div>
-
 </div>
 </section>
 
+<!-- STATS -->
 <section>
 <div class="title"><h2>Professional Impact</h2></div>
+
 <div class="stats">
 <div class="stat"><h3>7+</h3><p>Years Experience</p></div>
 <div class="stat"><h3>100+</h3><p>Users Supported</p></div>
@@ -317,6 +353,7 @@ box-shadow:var(--shadow);
 </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <div class="title"><h2>Contact for ICT Jobs</h2></div>
 
@@ -346,7 +383,7 @@ box-shadow:var(--shadow);
 </section>
 
 <footer>
-<p>ICT Support Officer Portfolio | Built for Somaliland Job Market</p>
+<p>ICT Support Officer Portfolio | Somaliland Job Ready</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/252636710907">WhatsApp</a>
