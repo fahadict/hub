@@ -328,44 +328,37 @@ color:black;
 
 }
 
-.profile-wrapper{
-display:flex;
-justify-content:center;
+/* Profile Wrapper - Adding horizontal/vertical padding to prevent touching edges */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px; 
 }
 
-.profile-ring{
-
-width:340px;
-height:340px;
-
-padding:8px;
-
-background:linear-gradient(135deg,var(--accent),#ffffff);
-
-border-radius:50%;
-
-box-shadow:0 0 50px rgba(250,204,21,.25);
-
+/* Profile Ring - Centering and ensuring consistent size */
+.profile-ring {
+    width: 280px; 
+    height: 280px;
+    padding: 8px; 
+    margin: 0 auto; 
+    background: linear-gradient(135deg, var(--accent), #ffffff);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
 }
 
-.profile-img{
-
-width:100%;
-height:100%;
-object-fit:cover;
-border-radius:50%;
-border:6px solid #0b1120;
-
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--primary);
 }
 
-/* RECRUITER SNAPSHOT */
-
-.snapshot{
-
-margin-top:-50px;
-position:relative;
-z-index:5;
-
+/* RECRUITER SNAPSHOT - Removed negative margin to stop overlapping */
+.snapshot {
+    margin-top: 40px; 
+    position: relative;
+    z-index: 5;
 }
 
 .snapshot-grid{
